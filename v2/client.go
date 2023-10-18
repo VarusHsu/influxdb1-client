@@ -419,6 +419,9 @@ func (c *client) Write(bp BatchPoints) error {
 	if err != nil {
 		return err
 	}
+
+	req.Close = true
+
 	if c.encoding != DefaultEncoding {
 		req.Header.Set("Content-Encoding", string(c.encoding))
 	}
