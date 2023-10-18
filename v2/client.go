@@ -18,7 +18,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/influxdata/influxdb1-client/models"
+	"github.com/VarusHsu/influxdb1-client/models"
 )
 
 type ContentEncoding string
